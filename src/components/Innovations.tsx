@@ -13,7 +13,7 @@ const Innovations = () => {
     {
       icon: Building2,
       value: '9',
-      label: 'FILIALES INTÉGRÉES',
+      label: 'FI LIALES INTÉGRÉES',
       description: 'Une synergie maîtrisée entre expertises complémentaires, pour offrir une réponse globale, fluide et cohérente à chaque besoin.',
       color: 'from-primary-600 to-primary-700'
     },
