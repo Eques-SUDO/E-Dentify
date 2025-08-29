@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowRight, Sparkles } from 'lucide-react'
-import { Stethoscope, Smile, Building2, FlaskConical, HeartHandshake } from 'lucide-react'
+import { Stethoscope, Users } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
@@ -11,24 +11,14 @@ const Hero = () => {
       path: '/clients/medecins-cliniques'
     },
     {
-      icon: Smile,
-      name: 'Dentistes',
-      path: '/clients/dentistes'
-    },
-    {
       icon: Sparkles,
-      name: 'Esthétique',
-      path: '/clients/esthetique'
+      name: 'Esthétique médicale',
+      path: '/clients/esthetique-medicale'
     },
     {
-      icon: FlaskConical,
-      name: 'Laboratoires',
-      path: '/clients/laboratoires'
-    },
-    {
-      icon: HeartHandshake,
-      name: 'Technologies Santé',
-      path: '/clients/tech-sante'
+      icon: Users,
+      name: 'Acteurs',
+      path: '/clients/acteurs'
     }
   ]
 
@@ -76,7 +66,7 @@ const Hero = () => {
           
 
           {/* Client Sectors */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             {sectors.map((sector, index) => (
               <Link 
                 key={index}
