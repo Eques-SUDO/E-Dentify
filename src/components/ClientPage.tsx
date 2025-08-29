@@ -13,6 +13,7 @@ interface Client {
     instagram?: string
     facebook?: string
     linkedin?: string
+    tiktok?: string
   }
 }
 
@@ -26,24 +27,24 @@ interface ClientPageProps {
 const ClientPage: React.FC<ClientPageProps> = ({ sectorName, sectorIcon: SectorIcon, sectorColor, clients }) => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className={`bg-gradient-to-r ${sectorColor} text-white py-16`}>
+      {/* Header with proper spacing for fixed header */}
+      <div className="bg-gradient-to-r from-[#112540] to-[#1a3a5c] text-white pt-32 pb-16">
         <div className="container-custom">
-          <Link 
-            to="/"
-            className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5 mr-2" />
-            Retour à l'accueil
-          </Link>
-          
-          <div className="flex items-center mb-4">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
-              <SectorIcon className="w-8 h-8" />
+          <div className="text-center max-w-4xl mx-auto">
+            {/* Icon */}
+            <div className="w-20 h-20 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center mx-auto mb-6 border border-white/20 shadow-xl">
+              <SectorIcon className="w-10 h-10" />
             </div>
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">{sectorName}</h1>
-              <p className="text-xl text-white/90">Nos clients et réalisations</p>
+            
+            {/* Title and Subtitle */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-shadow-lg">{sectorName}</h1>
+            <p className="text-xl md:text-2xl font-bold text-white/90 mb-6">Nos clients et réalisations</p>
+            
+            {/* Decorative Line */}
+            <div className="flex items-center justify-center gap-4">
+              <div className="h-px w-20 bg-gradient-to-r from-transparent to-white/30"></div>
+              <div className="w-2 h-2 bg-white/50 rounded-full"></div>
+              <div className="h-px w-20 bg-gradient-to-l from-transparent to-white/30"></div>
             </div>
           </div>
         </div>
@@ -89,7 +90,7 @@ const ClientPage: React.FC<ClientPageProps> = ({ sectorName, sectorIcon: SectorI
                     {client.services.map((service, idx) => (
                       <span
                         key={idx}
-                        className={`px-3 py-1 bg-gradient-to-r ${sectorColor} text-white text-sm rounded-full`}
+                        className="px-3 py-1 bg-gradient-to-r from-[#112540] to-[#1a3a5c] text-white text-sm font-semibold rounded-full"
                       >
                         {service}
                       </span>
@@ -129,6 +130,18 @@ const ClientPage: React.FC<ClientPageProps> = ({ sectorName, sectorIcon: SectorI
                           className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors"
                         >
                           <Facebook className="w-4 h-4 text-blue-600" />
+                        </a>
+                      )}
+                      {client.socialMedia.tiktok && (
+                        <a
+                          href={client.socialMedia.tiktok}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors"
+                        >
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                          </svg>
                         </a>
                       )}
                       {client.socialMedia.linkedin && (
