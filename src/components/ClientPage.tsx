@@ -107,9 +107,9 @@ const ClientPage: React.FC<ClientPageProps> = ({ sectorName, sectorIcon: SectorI
                           href={client.socialMedia.website}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+                          className="w-8 h-8 bg-gradient-to-r from-[#112540] to-[#8296B7] rounded-full flex items-center justify-center hover:shadow-lg hover:scale-110 transition-all duration-300"
                         >
-                          <Globe className="w-4 h-4 text-gray-600" />
+                          <ExternalLink className="w-4 h-4 text-white" />
                         </a>
                       )}
                       {client.socialMedia.instagram && (

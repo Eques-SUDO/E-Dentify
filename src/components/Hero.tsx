@@ -40,32 +40,39 @@ const Hero = () => {
       <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-white/5 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
 
       {/* Content */}
-      <div className="relative z-10 container-custom text-center">
+      <div className="relative z-10 container-custom text-center pt-20">
         <div className="animate-fade-in">
           {/* Badge */}
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8">
-            <Sparkles className="w-5 h-5 text-white/80 mr-3" />
-            <span className="text-white/90 font-semibold text-lg">Powered by Marnova</span>
+          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
+            <Sparkles className="w-4 h-4 text-[#8296B7] mr-2" />
+            <span className="text-white text-sm font-medium">Powered by Marnova</span>
           </div>
           
-          {/* Main Title */}
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-              E-DENTIFY
+          {/* Main Title H1 */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">
+            <span className="block text-white/90 font-medium mb-2">Votre image, notre expertise :</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-black text-[#8296B7]">
+              du médical au lifestyle
             </span>
           </h1>
           
-          {/* Subtitle */}
-          <p className="text-2xl md:text-3xl text-white/90 mb-4 font-semibold">
-            Connecter la science à la vie
-          </p>
+          {/* Divider Line */}
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#8296B7] to-transparent mx-auto mb-8"></div>
           
-          <p className="text-xl text-white/70 mb-16 max-w-2xl mx-auto font-medium">
-            Pour ceux qui prennent soin, avec soin.
+          {/* Brand Name */}
+          <div className="mb-12">
+            <p className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-wide">
+              E-DENTIFY
+            </p>
+          </div>
+          
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl text-white/70 mb-16 max-w-2xl mx-auto leading-relaxed">
+            L'agence qui connecte la science à la vie, avec une expertise unique en marketing santé et lifestyle.
           </p>
 
           {/* Client Sectors */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {sectors.map((sector, index) => (
               <Link 
                 key={index}
@@ -86,17 +93,6 @@ const Hero = () => {
                 </div>
               </Link>
             ))}
-          </div>
-
-          {/* CTA Button */}
-          <div className="animate-slide-up" style={{ animationDelay: '0.8s' }}>
-            <a
-              href="#contact"
-              className="group inline-flex items-center bg-white text-[#112540] px-8 py-4 rounded-full font-bold text-lg hover:bg-white/90 transition-all duration-300 transform hover:scale-105 shadow-xl"
-            >
-              Démarrer votre projet
-              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
           </div>
         </div>
       </div>

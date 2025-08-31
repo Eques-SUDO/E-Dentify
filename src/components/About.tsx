@@ -69,6 +69,69 @@ const About = () => {
           </p>
         </div>
 
+        {/* Photos Gallery - Styled like Mission Card */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-black text-[#112540] mb-4">Notre Équipe en Action</h3>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#112540] to-[#8296B7] rounded-full mx-auto"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* First row - 3 images */}
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/img/spark-01.jpeg"
+                alt="E-DENTIFY Team Moment 1"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112540]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/img/spark-02.jpeg"
+                alt="E-DENTIFY Team Moment 2"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112540]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/img/spark-03.jpeg"
+                alt="E-DENTIFY Team Moment 3"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112540]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            {/* Second row - 2 images */}
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/img/spark-04.jpeg"
+                alt="E-DENTIFY Team Moment 4"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112540]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+              <img
+                src="/img/spark-05.jpeg"
+                alt="E-DENTIFY Team Moment 5"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112540]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div className="mt-8 p-4 bg-gradient-to-r from-[#112540] to-[#8296B7] rounded-xl text-white text-center">
+            <p className="font-bold italic">
+              "L'excellence naît de la collaboration et de la passion partagée."
+            </p>
+          </div>
+        </div>
+
         {/* Mission Card */}
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-16">
           <div className="text-center mb-8">
@@ -79,8 +142,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-lg text-gray-700 leading-relaxed font-semibold mb-6">
-                Réconcilier la médecine avec les nouveaux enjeux de communication. 
-                E-DENTIFY se positionne comme le pont entre l'expertise médicale et le marketing santé.
+                Chez E-dentify, notre mission est d'accompagner les marques et professionnels de la santé, de la beauté et du bien-être dans leur croissance digitale. Nous créons des contenus créatifs, esthétiques et pédagogiques qui renforcent la confiance, la notoriété et l'impact de nos clients, tout en respectant les codes de chaque secteur.
               </p>
               
               <div className="p-4 bg-gradient-to-r from-[#112540] to-[#8296B7] rounded-xl text-white">
@@ -151,6 +213,7 @@ const About = () => {
             ))}
           </div>
         </div>
+
 
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-[#112540] to-[#8296B7] rounded-2xl p-8 md:p-12 text-white text-center">

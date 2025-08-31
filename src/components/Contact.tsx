@@ -26,8 +26,8 @@ const Contact = () => {
                 <Mail className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
-              <a href="mailto:E-DENTIFY@marnovagroup.ma" className="text-lg hover:text-primary-300 transition-colors">
-                E-DENTIFY@marnovagroup.ma
+              <a href="mailto:e-dentify@marnovagroup.ma" className="text-lg hover:text-primary-300 transition-colors">
+                e-dentify@marnovagroup.ma
               </a>
             </div>
 
@@ -85,7 +85,7 @@ const Contact = () => {
 
           <div className="text-center animate-slide-up" style={{ animationDelay: '0.5s' }}>
             <a
-              href="mailto:E-DENTIFY@marnovagroup.ma"
+              href="mailto:e-dentify@marnovagroup.ma"
               className="group inline-flex items-center bg-white text-[#112540] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               Connectons la science à votre croissance !
