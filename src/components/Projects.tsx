@@ -61,11 +61,8 @@ const Projects = () => {
           <h3 className="text-3xl font-bold text-gray-900 mb-6">
             "Ce que vous voyez est pensé, ce que vous ne voyez pas, aussi."
           </h3>
-          <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
-            Chez E-dentify, nous croyons que la santé et l'esthétique de demain passeront par une communication plus humaine, plus transparente et plus experte.
-          </p>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Nous aspirons à devenir la référence du marketing médical dans le monde francophone, en créant un écosystème où les médecins peuvent grandir professionnellement tout en valorisant leur unicité auprès de leurs patients.
+          <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            Chez E-dentify, nous croyons que la santé, la beauté et le bien-être méritent une voix à la hauteur de leur impact. Nous voyons un monde où l'expertise médicale, l'art de la beauté et la quête du bien-être se rencontrent dans une même histoire : celle que nous écrivons pour nos clients.
           </p>
         </div>
       </div>
